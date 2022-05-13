@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Request Page</title>
+        <link rel="stylesheet" href="request.css">
+        <script defer src="requestCart.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+                  <i class="fas fa-bars"></i>
+              </span>
+          <a href="#" class="logo">2nd Street Pantry - Request</a>
+          <ul class="main-nav" id="js-menu">
+            <li>
+              <a href="#" class="nav-links">Search Item</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links">Review Cart</a>
+            </li>
+            <li>
+              <a href="../index.html" class="nav-links">Log Out</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="outer">
+          <main id="main">
+          <h2>Requestable Items</h2>
+          <p> We at the 2nd Street Pantry are proud to be of service to the members
+            of our community. The items below have been placed in your cart as part of one or more 
+            requests. If you feel like there are other items you need but could not find, please
+            contact us at 555-555-5555 and we will see if there is anything we can do.
+          </p>
+          <div id="inventory"></div>
+  
+          <form id="inventory-form">
+  
+          <script>
+  
+            var items = ["Shampoo", "Onions", "Apples", "Pepper", "Garlic"
+            , "Turnips", "Snow Peas", "Ramen", "Hair Spray", "Sugar", "Chocolate", "Eggs"];
+            
+
+
+            for (let i = 0; i < items.length ; i++) {
+               
+              document.write('<p>' + items[i] + '</p>');
+  
+            }
+        </script>
+        <input type="submit" value="Submit Cart" id="cart-form-submit">
+        </form>
+        </main>
+      </div>
+
+      </body>
+</html>

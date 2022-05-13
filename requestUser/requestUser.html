@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Request Page</title>
+        <link rel="stylesheet" href="request.css">
+        <script defer src="request.js"></script>
+    </head>
+    <body>
+        <nav class="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+                  <i class="fas fa-bars"></i>
+              </span>
+          <a href="#" class="logo">2nd Street Pantry - Request</a>
+          <ul class="main-nav" id="js-menu">
+            <li>
+              <a href="requestSearch.html" class="nav-links">Search Item</a>
+            </li>
+            <li>
+              <a href="requestCart.html" class="nav-links">Review Cart</a>
+            </li>
+            <li>
+              <a href="../index.html" class="nav-links">Log Out</a>
+            </li>
+          </ul>
+        </nav>
+        <div id="outer">
+          <main id="main">
+          <h2>Requestable Items</h2>
+          <p></p>
+          <div id="inventory"></div>
+  
+          <form id="inventory-form">
+  
+          <script>
+  
+            var items = ["Shampoo", "Onions", "Apples", "Bananas", "Potatoes", "Apple Juice"
+            , "Squash", "Cucumber", "Milk", "Soda", "Tbone Steak","Toothpast","Toothbrush"
+            , "Green Beans","Beets", "Lettuce", "Oranges", "Rice", "Pasta", "Tomatoes", "Bread"
+            , "Chicken Soup", "Cheese", "Butter", "Cooking Oil", "Salt", "Pepper", "Garlic"
+            , "Turnips", "Snow Peas", "Ramen", "Hair Spray", "Sugar", "Chocolate", "Eggs"];
+            
+
+
+            for (let i = 0; i < items.length ; i++) {
+               
+              document.write('<p>' + items[i] + ': ' + '<input type="checkbox" name="requests'  
+                  +'" class="request-checkbox"></p>');
+  
+            }
+        </script>
+        <input type="submit" value="Submit Request" id="request-form-submit">
+        </form>
+        </main>
+      </div>
+
+      </body>
+</html>
